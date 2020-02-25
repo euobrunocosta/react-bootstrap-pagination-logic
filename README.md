@@ -1,4 +1,4 @@
-# react-bootstrap-pagination-logic
+# React Bootstrap Pagination Logic
 
 > Simple to use component that takes care of all the logic involved on creating the UI for a pagination system using Bootstrap 4 for the styling
 
@@ -14,17 +14,29 @@ npm install --save react-bootstrap-pagination-logic
 
 ```jsx
 import React, { Component } from 'react'
-
-import MyComponent from 'react-bootstrap-pagination-logic'
+import Pagination from 'react-bootstrap-pagination-logic'
 
 class Example extends Component {
+
+  handlePageChange = (page) => {
+    // your code here ...
+    console.log(page)
+  }
+
   render () {
     return (
-      <MyComponent />
+      <Pagination
+        current_page={10}
+        last_page={20}
+        position="center"
+        handlePageChange={this.handlePageChange} />
     )
   }
+
 }
 ```
+## Final Result
+![Pagination](result.png)
 
 ## License
 
