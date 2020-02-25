@@ -1,0 +1,8 @@
+{
+  "short_name": "react-bootstrap-pagination-logic",
+  "name": "react-bootstrap-pagination-logic",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
